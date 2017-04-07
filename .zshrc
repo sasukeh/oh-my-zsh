@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 alias virtualbox="sudo virtualbox &"
 alias vbox="sudo virtualbox &"
 alias node="/usr/bin/nodejs"
+alias rm="mv \!* ~/.trash
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
