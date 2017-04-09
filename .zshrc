@@ -88,7 +88,15 @@ alias virtualbox="sudo virtualbox &"
 alias vbox="sudo virtualbox &"
 alias node="/usr/bin/nodejs"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+reminder_cd() {
+    builtin cd "$@" && { [ ! -f .cd-reminder ] || cat .cd-reminder 1>&2; }
+}
+
+alias cd=reminder_cd
+
