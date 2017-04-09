@@ -87,13 +87,8 @@ source $ZSH/oh-my-zsh.sh
 alias virtualbox="sudo virtualbox &"
 alias vbox="sudo virtualbox &"
 alias node="/usr/bin/nodejs"
-alias rm="mv \!* ~/.trash
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin"
-# make it less tempting to use gpg version 1
-alias gpg=gpg2
-# use gpg's tab completions for gpg2; careful: not all options exist in both
-compdef gpg2=gpg
