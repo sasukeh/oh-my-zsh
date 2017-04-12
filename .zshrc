@@ -87,7 +87,6 @@ source $ZSH/oh-my-zsh.sh
 alias virtualbox="sudo virtualbox &"
 alias vbox="sudo virtualbox &"
 alias node="/usr/bin/nodejs"
-alias rm="mv \!* ~/.trash
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -97,3 +96,5 @@ export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin"
 alias gpg=gpg2
 # use gpg's tab completions for gpg2; careful: not all options exist in both
 compdef gpg2=gpg
+
+disable r
