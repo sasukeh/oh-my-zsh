@@ -42,7 +42,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+export HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -91,6 +91,7 @@ alias node="/usr/bin/nodejs"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin"
+<<<<<<< HEAD
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -100,3 +101,11 @@ reminder_cd() {
 
 alias cd=reminder_cd
 
+=======
+# make it less tempting to use gpg version 1
+alias gpg=gpg2
+# use gpg's tab completions for gpg2; careful: not all options exist in both
+compdef gpg2=gpg
+
+disable r
+>>>>>>> c27ab166e38c0ddf6d717ef0627c4b8f6575e7a0
